@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/preflight.css' layer(base);
+@import 'tailwindcss/utilities.css' layer(utilities);
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+IT+Moderna:wght@100..400&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@plugin '@tailwindcss/typography';
+@layer theme, base, components, utilities;
+
+@theme {
+	--font-inter: 'Inter', sans-serif;
+	--font-space-mono: 'Space Mono', sans-serif;
+	--font-playwrite-it-moderna: 'Playwrite IT Moderna', sans-serif;
+}
+
+@theme {
+	--color-background: #010104;
+	--color-primary: #794eff;
+	--color-secondary: #222222;
+	--color-accent: #9290e4;
+}
+
+:root {
+	--grid-color: #0f0f0f;
+}
+
+h1 {
+	font-size: 3.053rem; /* 48.8px */
+}
+
+h2 {
+	font-size: 2.442rem; /* 39.04px */
+}
+
+h3 {
+	font-size: 1.954rem; /* 31.2px */
+}
+
+h4 {
+	font-size: 1.563rem; /* 24.96px */
+}
+
+h5 {
+	font-size: 1.25rem; /* 20px */
+}
+
+small {
+	font-size: 0.8rem; /* 12.8px */
+}
+
+.dot {
+	inset: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+		linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+	background-size: 100px 100px;
+}
