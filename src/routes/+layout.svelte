@@ -1,14 +1,15 @@
 <script lang="ts">
+	import { page } from '$app/state';
+	import DesktopSidebar from '$lib/components/DesktopSidebar.svelte';
+	import MobileSidebar from '$lib/components/mobile-sidebar.svelte';
 	import { slide } from 'svelte/transition';
 	import '../app.css';
-	import { page } from "$app/state";
 
 	let { children, data } = $props();
 	let pages = ['Home', 'About', 'Projects', 'Skills', 'Education', 'Contact'];
 
 	let transitionDuration = 500;
-	let selected = $derived(page.url.pathname.split('/')[1] || "home");
-  $inspect(selected)
+	let selected = $derived(page.url.pathname.split('/')[1] || 'home');
 </script>
 
 <svelte:head>
@@ -24,26 +25,18 @@
 <div class="dark font-inter bg-background h-screen w-screen overflow-hidden text-white">
 	{#key data.url}
 		<div class="dot bg-grid flex h-full w-full items-center justify-center">
-			<div></div>
-			<div class="flex w-1/2 flex-col items-start space-y-2 p-10">
-				<div class="bg-secondary text-primary w-3/4 rounded-t-lg px-4 py-8">
-					<h1 class="font-playwrite-it-moderna text-7xl font-medium">toheeb eji ⋆˚✿˖°</h1>
+			<div class="flex flex-col items-start space-y-2 p-4 md:p-10 lg:w-1/2">
+				<div class="bg-secondary text-primary w-full rounded-t-lg px-4 py-8 md:w-3/4">
+					<h1 class="flex items-center justify-between">
+						<span class="font-playwrite-it-moderna text-4xl font-medium md:text-5xl lg:text-6xl xl:text-7xl"
+							>toheeb eji ⋆˚✿˖°</span
+						>
+						<MobileSidebar {pages} {selected} />
+					</h1>
 				</div>
 				<div class="bg-secondary h-3/5 w-full space-y-2 rounded-tr-lg rounded-b-lg px-4 py-1">
 					<!-- navbar -->
-					<div class="flex space-x-2 text-white">
-						{#each pages as page, index}
-							<a
-								href="/{page == 'Home' ? '' : page.toString().toLowerCase()}"
-								class="font-space-mono hover:opacity-50 {page.toLowerCase() == selected && 'text-primary'}"
-							>
-								{page}
-							</a>
-							{#if index != pages.length - 1}
-								<p>•</p>
-							{/if}
-						{/each}
-					</div>
+					<DesktopSidebar {pages} {selected} />
 					<div
 						in:slide={{ axis: 'y', delay: transitionDuration, duration: transitionDuration }}
 						out:slide={{ axis: 'y', duration: transitionDuration }}

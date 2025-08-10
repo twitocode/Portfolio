@@ -58,8 +58,9 @@
 	]);
 </script>
 
+
 <section
-	class="to-primary from-background bg-background mb-2 grid h-auto w-full grid-cols-2 gap-2.25 rounded-md px-2 py-2 overflow-auto max-h-[500px]"
+	class="to-primary from-background bg-background mb-2 grid h-auto w-full grid-cols-1 md:grid-cols-2 gap-2.25 rounded-md px-2 py-2 overflow-auto max-h-[500px] "
 >
 	{#each projects as project}
 		<ProjectCard {project} />

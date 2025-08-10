@@ -2,6 +2,7 @@
 
 @import "./shadcn.css";
 @plugin '@tailwindcss/typography';
+@plugin 'tailwind-hamburgers';
 
 @theme inline {
   --font-inter: 'Inter', sans-serif;
