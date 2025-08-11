@@ -1,8 +1,6 @@
 <script lang="ts">
-	import protoboardImage from '$lib/assets/protoboard.webp';
-	import sereneImage from '$lib/assets/serene.png';
 	import ProjectCard from '$lib/components/project-card.svelte';
-	import type { Project } from '$lib/components/types';
+	import type { Project } from '$lib/types';
 
 	import IconGithub from '~icons/mdi/github';
 	import IconWeb from '~icons/mdi/web';
@@ -11,7 +9,7 @@
 		{
 			title: 'Serene',
 			summary: 'A mental health platform for students',
-			image: sereneImage,
+			image: "/serene.png",
 			status: 'in-progress',
 			stack: [
 				{ tag: '.NET', colour: 'purple' },
@@ -35,7 +33,7 @@
 		{
 			title: 'Protoboard',
 			summary: 'A breadboard simulator made in unity for school',
-			image: protoboardImage,
+			image: "/protoboard.webp",
 			status: 'completed',
 			stack: [
 				{ tag: 'C#', colour: 'purple' },

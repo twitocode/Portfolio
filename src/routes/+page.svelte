@@ -1,5 +1,4 @@
 <script>
-	import saturn from '$lib/assets/saturn.gif';
 	import { SpotifyApi } from "@spotify/web-api-ts-sdk";
 
 </script>
@@ -8,7 +7,7 @@
 	class="to-primary from-background bg-background mb-2 grid h-auto w-full grid-cols-1 md:grid-cols-2 gap-4 rounded-md px-2 pt-2"
 >
 	<div>
-		<img src={saturn} class="rounded-md shadow-lg" alt="Saturn GIF" />
+		<img src="/saturn.gif" class="rounded-md shadow-lg" alt="Saturn GIF" />
 	</div>
 	<div class="flex flex-col justify-between">
 		<div class="mb-2 md:mb-0">

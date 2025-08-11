@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import DesktopSidebar from '$lib/components/DesktopSidebar.svelte';
+	import DesktopSidebar from '$lib/components/desktop-sidebar.svelte';
 	import MobileSidebar from '$lib/components/mobile-sidebar.svelte';
 	import { slide } from 'svelte/transition';
 	import '../app.css';
@@ -38,6 +38,7 @@
 				<div class="bg-secondary h-3/5 w-full space-y-2 rounded-tr-lg rounded-b-lg px-4 py-1">
 					<!-- navbar -->
 					<DesktopSidebar {pages} {selected} />
+          <span class="block md:hidden text-primary font-medium text-lg text-center font-space-mono">{selected[0].toUpperCase() + selected.substring(1, selected.length)}</span>
 					<div
 						in:slide={{ axis: 'y', delay: transitionDuration, duration: transitionDuration }}
 						out:slide={{ axis: 'y', duration: transitionDuration }}
