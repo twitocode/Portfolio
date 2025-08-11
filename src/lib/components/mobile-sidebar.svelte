@@ -16,12 +16,6 @@
 
 <IconHamburgerMenu class="text-3xl text-white md:hidden" onclick={toggleNavbar} />
 
-<div class="tham tham-e-squeeze tham-w-12 tham-active bg-white text-white">
-	<div class="tham-box">
-		<div class="tham-inner"></div>
-	</div>
-</div>
-
 <div
 	class={[
 		open && 'absolute',
