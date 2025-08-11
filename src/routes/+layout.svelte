@@ -22,6 +22,7 @@
 	<title>{data.url == '/' ? '' : data.url.split('/')[1] + ' |'} twitocode</title>
 </svelte:head>
 
+
 <div class="dark font-inter bg-background h-screen w-screen overflow-hidden text-white">
 	{#key data.url}
 		<div class="dot bg-grid flex h-full w-full items-center justify-center">

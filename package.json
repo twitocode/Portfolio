@@ -53,6 +53,7 @@
 		"@spotify/web-api-ts-sdk": "^1.2.0",
 		"gsap": "^3.13.0",
 		"query-string": "^9.2.2",
+		"svelte-exmarkdown": "^5.0.2",
 		"tailwind-hamburgers": "^1.3.5",
 		"unplugin-icons": "^22.1.0"
 	}
