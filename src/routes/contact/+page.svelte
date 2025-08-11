@@ -5,9 +5,8 @@
 </script>
 
 <section
-	class="to-primary from-background bg-background mb-2 grid h-auto w-full grid-cols-2 gap-4 rounded-md px-2 py-2"
+	class="to-primary from-background bg-background mb-2 h-auto w-full rounded-md px-2 py-2 overflow-auto max-h-[500px] flex flex-col space-y-2"
 >
-	<div class="flex flex-col space-y-2">
 		<div class="flex items-center space-x-2"><IconEmail /> ejit@mcmaster.ca</div>
 		<a
 			href="https://github.com/twitocode"
@@ -21,5 +20,5 @@
 			rel="noopener noreferrer"
 			class="flex items-center space-x-2"><IconLinkedIn />Linkedin</a
 		>
-	</div>
+	
 </section>

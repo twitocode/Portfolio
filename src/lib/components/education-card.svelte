@@ -27,7 +27,7 @@
 				<span class="font-space-mono  flex items-center space-x-3"><education.icon class="text-xl"/> <span class="text-sm sm:text-md lg:text-lg xl:text-xl">{education.name}</span></span>
 				<span class="text-primary italic">{education.program}</span>
 			</span>
-			<span class="text-sm text-gray-50 italic">{education.startDate} - {education.graduationDate}</span>
+			<span class="text-sm text-gray-50 opacity-50">{education.startDate} - {education.graduationDate}</span>
 		</Card.Title>
 	</Card.Header>
 	{#if education.points.length > 0}

@@ -20,7 +20,7 @@
 	class={[
 		open && 'absolute',
 		!open && 'hidden',
-		'mobile-nav top-full left-0 h-screen w-screen bg-black opacity-85'
+		'mobile-nav top-full left-0 h-screen w-screen bg-black opacity-85 z-10'
 	]}
 >
 	<div
