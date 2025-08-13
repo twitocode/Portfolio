@@ -25,14 +25,15 @@
 }
 
 :root {
-	--grid-color: #0f0f0f;
+	--grid-color: #303030;
 }
 
 .dot {
 	inset: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+	background-image: 
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
 		linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
 	background-size: 100px 100px;
 }
