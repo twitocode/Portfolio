@@ -6,6 +6,14 @@
 	import IconClockOutline from '~icons/mdi/clock-outline';
 
 	const { project } = $props<{ project: Project }>();
+
+  const colorClasses: Record<string, string> = {
+  purple: "bg-purple-500 dark:bg-purple-500",
+  cyan:   "bg-cyan-500 dark:bg-cyan-500",
+  orange: "bg-orange-500 dark:bg-orange-500",
+  blue:   "bg-blue-500 dark:bg-blue-500",
+  sky:   "bg-sky-500 dark:bg-sky-500",
+};
 </script>
 
 <Card.Root class="rounded-sm border-0">
@@ -40,7 +48,7 @@
 	</Card.Content>
 	<Card.Footer class="space-x-1 overflow-auto scroll-auto flex w-full flex-wrap ">
 		{#each project.stack as tag}
-			<Badge variant="secondary" class={`bg-${tag.colour}-500 text-white dark:bg-{tag.colour}-600`}>
+			<Badge variant="secondary" class={[colorClasses[tag.colour], " text-white"]}>
 				{tag.tag}
 			</Badge>
 		{/each}

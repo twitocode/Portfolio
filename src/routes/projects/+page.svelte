@@ -13,7 +13,7 @@
 			status: 'in-progress',
 			stack: [
 				{ tag: '.NET', colour: 'purple' },
-				{ tag: 'C#', colour: 'purple' },
+				{ tag: 'PostgreSQL', colour: 'sky' },
 				{ tag: 'SvelteKit', colour: 'orange' },
 				{ tag: 'TypeScript', colour: 'blue' }
 			],
@@ -47,6 +47,28 @@
 				},
 				{
 					url: 'https://github.com/Twito-School-Projects/Protoboard',
+					alt: 'Source Code',
+					icon: IconGithub
+				}
+			]
+		},
+    {
+			title: 'CEQuiz',
+			summary: 'A quizzing site containing computer engineering topics',
+			image: "/cequiz.png",
+			status: 'completed',
+			stack: [
+				{ tag: 'SvelteKit', colour: 'orange' },
+				{ tag: 'TypeScript', colour: 'blue' }
+			],
+			links: [
+				{
+					url: 'https://cequiz.vercel.app/',
+					alt: 'Link',
+					icon: IconWeb
+				},
+				{
+					url: 'https://github.com/twitocode/CE-Quiz-Site',
 					alt: 'Source Code',
 					icon: IconGithub
 				}
