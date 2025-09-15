@@ -27,9 +27,9 @@
 	{#key data.url}
 		<div class="dot bg-grid flex h-full w-full items-center justify-center">
 			<div class="flex flex-col items-start space-y-2 p-4 md:p-10 lg:w-1/2">
-				<div class="bg-secondary text-primary w-full rounded-t-lg px-4 py-8 md:w-3/4">
+				<div class="bg-secondary text-primary w-full rounded-t-lg px-4 py-8 md:w-10/12">
 					<h1 class="flex items-center justify-between">
-						<span class="font-playwrite-it-moderna text-4xl font-medium md:text-5xl lg:text-6xl xl:text-7xl"
+						<span class="font-playwrite-it-moderna text-5xl font-medium md:text-5xl lg:text-6xl"
 							>toheeb eji ⋆˚✿˖°</span
 						>
 						<MobileSidebar {pages} {selected} />
