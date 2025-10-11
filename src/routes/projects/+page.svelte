@@ -14,7 +14,8 @@
 			stack: [
 				{ tag: '.NET', colour: 'purple' },
 				{ tag: 'PostgreSQL', colour: 'sky' },
-				{ tag: 'SvelteKit', colour: 'orange' },
+				{ tag: 'React', colour: 'blue' },
+        { tag: "Next", colour: "black"},
 				{ tag: 'TypeScript', colour: 'blue' }
 			],
 			links: [

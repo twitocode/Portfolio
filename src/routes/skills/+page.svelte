@@ -11,7 +11,8 @@
 				{ tag: 'C#', colour: 'purple' },
 				{ tag: '.NET', colour: 'purple' },
 				{ tag: 'TypeScript', colour: 'blue' },
-				{ tag: 'Svelte', colour: 'orange' }
+				{ tag: 'Svelte', colour: 'orange' },
+				{ tag: 'React', colour: 'blue' }
 			]
 		}
 	]);
