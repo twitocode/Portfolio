@@ -40,6 +40,8 @@
 			<a
 				class="text-accent-foreground flex items-center space-x-1 hover:underline hover:opacity-50"
 				href={link.url}
+        target="_blank"
+		rel="noopener noreferrer"
 			>
 				<link.icon />
 				<span>{link.alt}</span>

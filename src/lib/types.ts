@@ -18,6 +18,14 @@ export type Project = {
 		icon?: Component<SvelteHTMLElements['svg']>;
 	}[];
 };
+export type Hackathon = {
+	name: string;
+	imageUrl: string;
+	location: string;
+	date: string;
+	points: Point[];
+	devpostLink: string
+};
 
 export type Point = {
 	content: string;

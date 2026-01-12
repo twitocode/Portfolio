@@ -6,7 +6,7 @@
 	import '../app.css';
 
 	let { children, data } = $props();
-	let pages = ['Home', 'About', 'Projects', 'Skills', 'Education', 'Contact'];
+	let pages = ['Home', 'About', 'Projects', 'Skills', "Hackathons", 'Education', 'Contact'];
 
 	let transitionDuration = 400;
 	let selected = $derived(page.url.pathname.split('/')[1] || 'home');
@@ -26,7 +26,7 @@
 <div class="dark font-inter bg-background h-screen w-screen overflow-hidden text-white">
 	{#key data.url}
 		<div class="dot bg-grid flex h-full w-full items-center justify-center">
-			<div class="flex flex-col items-start space-y-2 p-4 md:p-10 lg:w-1/2">
+			<div class="flex flex-col items-start space-y-2 p-4 w-full sm:w-9/10 md:w-7/8 lg:w-7/10 xl:w-6/10">
 				<div class="bg-secondary text-primary w-full rounded-t-lg px-4 py-8 md:w-10/12">
 					<h1 class="flex items-center justify-between">
 						<span class="font-playwrite-it-moderna text-5xl font-medium md:text-5xl lg:text-6xl"

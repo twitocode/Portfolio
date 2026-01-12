@@ -6,10 +6,10 @@
 	import IconWeb from '~icons/mdi/web';
 
 	const projects = $state<Array<Project>>([
-    		{
+		{
 			title: 'Waypoint',
 			summary: 'AI-Powered Search and Rescue Prediction System. (Deltahacks 2026)',
-			image: "/waypoint.png",
+			image: '/waypoint.png',
 			status: 'completed',
 			stack: [
 				{ tag: '.Python', colour: 'dark_blue' },
@@ -34,13 +34,13 @@
 		{
 			title: 'Serene',
 			summary: 'A mental health platform for university and college students',
-			image: "/serene.png",
+			image: '/serene.png',
 			status: 'in-progress',
 			stack: [
 				{ tag: '.NET', colour: 'purple' },
 				{ tag: 'PostgreSQL', colour: 'sky' },
 				{ tag: 'React', colour: 'blue' },
-        { tag: "Next", colour: "black"},
+				{ tag: 'Next', colour: 'black' },
 				{ tag: 'TypeScript', colour: 'blue' }
 			],
 			links: [
@@ -58,8 +58,8 @@
 		},
 		{
 			title: 'Protoboard',
-			summary: 'A breadboard simulator made in unity for school',
-			image: "/protoboard.webp",
+			summary: 'A breadboard simulator made in Unity for school',
+			image: '/protoboard.webp',
 			status: 'completed',
 			stack: [
 				{ tag: 'C#', colour: 'purple' },
@@ -78,10 +78,10 @@
 				}
 			]
 		},
-    {
+		{
 			title: 'CEQuiz',
 			summary: 'A quizzing site containing computer engineering topics',
-			image: "/cequiz.png",
+			image: '/cequiz.png',
 			status: 'completed',
 			stack: [
 				{ tag: 'SvelteKit', colour: 'orange' },
@@ -99,14 +99,12 @@
 					icon: IconGithub
 				}
 			]
-		},
-		
+		}
 	]);
 </script>
 
-
 <section
-	class="to-primary from-background bg-background mb-2 grid h-auto w-full grid-cols-1 md:grid-cols-2 gap-y-2.25 md:gap-2.25 rounded-md px-2 py-2 overflow-auto max-h-[500px] "
+	class="to-primary from-background bg-background mb-2 grid h-auto max-h-[500px] w-full grid-cols-1 gap-y-2.25 overflow-auto rounded-md px-2 py-2 md:grid-cols-2 md:gap-2.25"
 >
 	{#each projects as project}
 		<ProjectCard {project} />
