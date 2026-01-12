@@ -6,6 +6,31 @@
 	import IconWeb from '~icons/mdi/web';
 
 	const projects = $state<Array<Project>>([
+    		{
+			title: 'Waypoint',
+			summary: 'AI-Powered Search and Rescue Prediction System. (Deltahacks 2026)',
+			image: "/waypoint.png",
+			status: 'completed',
+			stack: [
+				{ tag: '.Python', colour: 'dark_blue' },
+				{ tag: '.FastAPI', colour: 'emerald' },
+
+				{ tag: 'React', colour: 'blue' },
+				{ tag: 'TypeScript', colour: 'blue' }
+			],
+			links: [
+				{
+					url: 'https://trywaypoint.tech',
+					alt: 'Link',
+					icon: IconWeb
+				},
+				{
+					url: 'https://github.com/twitocode/deltahacks-2026',
+					alt: 'Source Code',
+					icon: IconGithub
+				}
+			]
+		},
 		{
 			title: 'Serene',
 			summary: 'A mental health platform for university and college students',
