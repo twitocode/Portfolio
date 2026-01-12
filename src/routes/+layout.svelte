@@ -20,6 +20,7 @@
 		rel="stylesheet"
 	/>
 	<title>{data.url == '/' ? '' : data.url.split('/')[1] + ' |'} twitocode</title>
+    <link rel="icon" type="image/x-icon" href="/logo.jpeg">
 </svelte:head>
 
 
