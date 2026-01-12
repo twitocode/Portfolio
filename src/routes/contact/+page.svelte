@@ -7,18 +7,18 @@
 <section
 	class="to-primary from-background bg-background mb-2 h-auto w-full rounded-md px-2 py-2 overflow-auto max-h-[500px] flex flex-col space-y-2"
 >
-		<div class="flex items-center space-x-2"><IconEmail /> ejit@mcmaster.ca</div>
+		<div class="flex items-center gap-2"><IconEmail /> ejit@mcmaster.ca</div>
 		<a
 			href="https://github.com/twitocode"
 			target="_blank"
 			rel="noopener noreferrer"
-			class="flex items-center space-x-2"><IconGithub /> Github</a
+			class="flex items-center gap-2"><IconGithub /> Github</a
 		>
 		<a
 			href="https://www.linkedin.com/in/toheeb-eji-880b72325/"
 			target="_blank"
 			rel="noopener noreferrer"
-			class="flex items-center space-x-2"><IconLinkedIn />Linkedin</a
+			class="flex items-center gap-2"><IconLinkedIn />Linkedin</a
 		>
 	
 </section>

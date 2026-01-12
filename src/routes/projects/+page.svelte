@@ -8,7 +8,7 @@
 	const projects = $state<Array<Project>>([
 		{
 			title: 'Serene',
-			summary: 'A mental health platform for students',
+			summary: 'A mental health platform for university and college students',
 			image: "/serene.png",
 			status: 'in-progress',
 			stack: [
@@ -20,7 +20,7 @@
 			],
 			links: [
 				{
-					url: 'serene.vercel.app',
+					url: 'https://serene-opal.vercel.app',
 					alt: 'Link',
 					icon: IconWeb
 				},

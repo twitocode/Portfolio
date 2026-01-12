@@ -8,7 +8,7 @@
 	let { children, data } = $props();
 	let pages = ['Home', 'About', 'Projects', 'Skills', 'Education', 'Contact'];
 
-	let transitionDuration = 500;
+	let transitionDuration = 400;
 	let selected = $derived(page.url.pathname.split('/')[1] || 'home');
 </script>
 

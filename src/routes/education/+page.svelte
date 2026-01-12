@@ -11,7 +11,11 @@
 			startDate: 'Sept 2025',
 			graduationDate: 'Present',
 			icon: IconSchoolOutline,
-			points: []
+			points: [
+        {
+          content: "GPA - 3.76"
+        }
+      ]
 		},
 		{
 			name: 'Bishop Ryan Catholic Secondary School',
@@ -36,9 +40,9 @@
 	{#each schools as school, i}
 		<span class="flex flex-col items-center w-full space-y-2">
 			<EducationCard education={school} />
-			{#if i < schools.length - 1}
+			<!-- {#if i < schools.length - 1}
         <IconArrowDown />
-      {/if}
+      {/if} -->
 		</span>
 	{/each}
 </section>
