@@ -10,7 +10,7 @@
 			date: 'January 2026',
 			points: [
 				{
-					content: 'Worked on the frontend and designed the project in Figma'
+					content: 'Worked on the React frontend and designed the project in Figma'
 				}
 			],
 			devpostLink:
@@ -23,7 +23,8 @@
 			date: 'November 2025',
 			points: [
 				{ content: 'Winner of Best Venture Track Award' },
-				{ content: 'Worked on the backend and AI implementation' }
+				{ content: 'Worked on the backend and AI implementation' },
+				{ content: 'Worked on the React Native mobile app' }
 			],
 			devpostLink:
 				'https://devpost.com/software/stufyflow?ref_content=user-portfolio&ref_feature=in_progress'

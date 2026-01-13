@@ -4,15 +4,16 @@
 
 	import IconGithub from '~icons/mdi/github';
 	import IconWeb from '~icons/mdi/web';
+	import IconDevpost from '~icons/simple-icons/devpost';
 
 	const projects = $state<Array<Project>>([
 		{
 			title: 'Waypoint',
-			summary: 'AI-Powered Search and Rescue Prediction System. (Deltahacks 2026)',
+			summary: 'AI-Powered Search and Rescue Prediction System. (Deltahacks 2026).',
 			image: '/projects/waypoint.webp',
 			status: 'completed',
 			stack: [
-				{ tag: '.Python', colour: 'dark_blue' },
+				{ tag: 'Python', colour: 'dark_blue' },
 				{ tag: '.FastAPI', colour: 'emerald' },
 
 				{ tag: 'React', colour: 'blue' },
@@ -21,8 +22,13 @@
 			links: [
 				{
 					url: 'https://trywaypoint.tech',
-					alt: 'Link',
+					alt: 'Website',
 					icon: IconWeb
+				},
+				{
+					url: 'https://devpost.com/software/stufyflow?ref_content=user-portfolio&ref_feature=in_progress',
+					alt: 'Devpost',
+					icon: IconDevpost
 				},
 				{
 					url: 'https://github.com/twitocode/deltahacks-2026',
@@ -33,7 +39,7 @@
 		},
 		{
 			title: 'Serene',
-			summary: 'A mental health platform for university and college students',
+			summary: 'A mental health platform for university and college students.',
 			image: '/projects/serene.webp',
 			status: 'in-progress',
 			stack: [
@@ -57,8 +63,32 @@
 			]
 		},
 		{
+			title: 'Studyflow',
+			summary:
+				'Helping high school students transform doom-scrolling on social media into productive study breaks through active recall flash cards.',
+			image: '/projects/studyflow.webp',
+			status: 'completed',
+			stack: [
+        { tag: 'React Native', colour: 'blue' },
+        { tag: 'Groq', colour: 'orange' },
+        { tag: 'FastAPI', colour: 'emerald' },
+      ],
+			links: [
+				{
+					url: 'https://devpost.com/software/stufyflow?ref_content=user-portfolio&ref_feature=in_progress',
+					alt: 'Devpost',
+					icon: IconDevpost
+				},
+				{
+					url: 'https://github.com/twitocode/rythmhacks2025',
+					alt: 'Source Code',
+					icon: IconGithub
+				}
+			]
+		},
+		{
 			title: 'Protoboard',
-			summary: 'A breadboard simulator made in Unity for school',
+			summary: 'A breadboard simulator made in Unity for school.',
 			image: '/projects/protoboard.webp',
 			status: 'completed',
 			stack: [
@@ -80,7 +110,7 @@
 		},
 		{
 			title: 'CEQuiz',
-			summary: 'A quizzing site containing computer engineering topics',
+			summary: 'A quizzing site containing computer engineering topics.',
 			image: '/projects/cequiz.webp',
 			status: 'completed',
 			stack: [
