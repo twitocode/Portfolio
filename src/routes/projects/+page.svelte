@@ -25,7 +25,7 @@
 			status: 'completed',
 			stack: [
 				{ tag: 'Python', colour: 'dark_blue', icon: IconPython },
-				{ tag: '.FastAPI', colour: 'emerald', icon: IconFastAPI },
+				{ tag: 'FastAPI', colour: 'emerald', icon: IconFastAPI },
 
 				{ tag: 'React', colour: 'blue', icon: IconReact },
 				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript }
