@@ -31,7 +31,7 @@
 						href={hackathon.devpostLink}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="to-primary"><Link /></a
+						class="transition ease-in-out hover:text-primary/80"><Link /></a
 					>
 				</span>
 			</span>
