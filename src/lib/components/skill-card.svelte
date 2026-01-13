@@ -2,6 +2,7 @@
 	import * as Card from '$lib/components/ui/card/index.js';
 	import type { Skill } from '$lib/types';
 	import Badge from './ui/badge/badge.svelte';
+	import { badgeColorMap } from '$lib/utils';
 
 	const { skill } = $props<{ skill: Skill }>();
 </script>
@@ -20,7 +21,12 @@
 	<Card.Content class="">
 		<div class="flex w-full flex-wrap gap-2">
 			{#each skill.items as item}
-				<Badge variant="secondary" class={`bg-${item.colour}-500 `}>{item.tag}</Badge>
+				<Badge variant="secondary" class={[badgeColorMap[item.colour] || 'bg-gray-500', 'flex items-center gap-1 transition-transform hover:scale-105']}>
+					{#if item.icon}
+						<item.icon />
+					{/if}
+					{item.tag}
+				</Badge>
 			{/each}
 		</div>
 	</Card.Content>

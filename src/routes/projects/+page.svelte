@@ -3,8 +3,19 @@
 	import type { Project } from '$lib/types';
 
 	import IconGithub from '~icons/mdi/github';
+	import IconRobot from '~icons/mdi/robot';
 	import IconWeb from '~icons/mdi/web';
+	import IconCSharp from '~icons/simple-icons/csharp';
 	import IconDevpost from '~icons/simple-icons/devpost';
+	import IconDotNet from '~icons/simple-icons/dotnet';
+	import IconFastAPI from '~icons/simple-icons/fastapi';
+	import IconNext from '~icons/simple-icons/nextdotjs';
+	import IconPostgres from '~icons/simple-icons/postgresql';
+	import IconPython from '~icons/simple-icons/python';
+	import IconReact from '~icons/simple-icons/react';
+	import IconSvelte from '~icons/simple-icons/svelte';
+	import IconTypeScript from '~icons/simple-icons/typescript';
+	import IconUnity from '~icons/simple-icons/unity';
 
 	const projects = $state<Array<Project>>([
 		{
@@ -13,11 +24,11 @@
 			image: '/projects/waypoint.webp',
 			status: 'completed',
 			stack: [
-				{ tag: 'Python', colour: 'dark_blue' },
-				{ tag: '.FastAPI', colour: 'emerald' },
+				{ tag: 'Python', colour: 'dark_blue', icon: IconPython },
+				{ tag: '.FastAPI', colour: 'emerald', icon: IconFastAPI },
 
-				{ tag: 'React', colour: 'blue' },
-				{ tag: 'TypeScript', colour: 'blue' }
+				{ tag: 'React', colour: 'blue', icon: IconReact },
+				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript }
 			],
 			links: [
 				{
@@ -43,11 +54,11 @@
 			image: '/projects/serene.webp',
 			status: 'in-progress',
 			stack: [
-				{ tag: '.NET', colour: 'purple' },
-				{ tag: 'PostgreSQL', colour: 'sky' },
-				{ tag: 'React', colour: 'blue' },
-				{ tag: 'Next', colour: 'black' },
-				{ tag: 'TypeScript', colour: 'blue' }
+				{ tag: '.NET', colour: 'purple', icon: IconDotNet },
+				{ tag: 'PostgreSQL', colour: 'sky', icon: IconPostgres },
+				{ tag: 'React', colour: 'blue', icon: IconReact },
+				{ tag: 'Next', colour: 'black', icon: IconNext },
+				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript }
 			],
 			links: [
 				{
@@ -69,10 +80,10 @@
 			image: '/projects/studyflow.webp',
 			status: 'completed',
 			stack: [
-        { tag: 'React Native', colour: 'blue' },
-        { tag: 'Groq', colour: 'orange' },
-        { tag: 'FastAPI', colour: 'emerald' },
-      ],
+				{ tag: 'React Native', colour: 'blue', icon: IconReact },
+				{ tag: 'Groq', colour: 'orange', icon: IconRobot },
+				{ tag: 'FastAPI', colour: 'emerald', icon: IconFastAPI }
+			],
 			links: [
 				{
 					url: 'https://devpost.com/software/stufyflow?ref_content=user-portfolio&ref_feature=in_progress',
@@ -92,8 +103,8 @@
 			image: '/projects/protoboard.webp',
 			status: 'completed',
 			stack: [
-				{ tag: 'C#', colour: 'purple' },
-				{ tag: 'Unity', colour: 'neutral' }
+				{ tag: 'C#', colour: 'purple', icon: IconCSharp },
+				{ tag: 'Unity', colour: 'neutral', icon: IconUnity }
 			],
 			links: [
 				{
@@ -114,8 +125,8 @@
 			image: '/projects/cequiz.webp',
 			status: 'completed',
 			stack: [
-				{ tag: 'SvelteKit', colour: 'orange' },
-				{ tag: 'TypeScript', colour: 'blue' }
+				{ tag: 'SvelteKit', colour: 'orange', icon: IconSvelte },
+				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript }
 			],
 			links: [
 				{

@@ -4,6 +4,7 @@ import type { SvelteHTMLElements } from 'svelte/elements';
 export type StackItem = {
 	colour: string;
 	tag: string;
+	icon?: Component<SvelteHTMLElements['svg']>;
 };
 
 export type Project = {

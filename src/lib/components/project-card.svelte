@@ -2,21 +2,11 @@
 	import { Badge } from '$lib/components/ui/badge';
 	import * as Card from '$lib/components/ui/card/index.js';
 	import type { Project } from '$lib/types';
+	import { badgeColorMap } from '$lib/utils';
 	import IconCheckDecagram from '~icons/mdi/check-decagram';
 	import IconClockOutline from '~icons/mdi/clock-outline';
 
 	const { project } = $props<{ project: Project }>();
-
-	const colorClasses: Record<string, string> = {
-		purple: 'bg-purple-500 dark:bg-purple-500',
-		cyan: 'bg-cyan-500 dark:bg-cyan-500',
-		orange: 'bg-orange-500 dark:bg-orange-500',
-		blue: 'bg-blue-500 dark:bg-blue-500',
-		sky: 'bg-sky-500 dark:bg-sky-500',
-    green: "bg-green-500 dark:bg-green-500",
-    emerald: "bg-emerald-700 dark:bg-emerald-700",
-    dark_blue: "bg-blue-700 dark:bg-blue-700"
-	};
 </script>
 
 <Card.Root class="rounded-sm border-0">
@@ -51,9 +41,12 @@
 	<Card.Content>
 		<img src={project.image} alt="{project.image}'s Image" class="aspect-video object-cover" />
 	</Card.Content>
-	<Card.Footer class="flex w-full flex-wrap space-x-1 overflow-auto scroll-auto ">
+	<Card.Footer class="flex w-full flex-wrap gap-2 overflow-auto scroll-auto ">
 		{#each project.stack as tag}
-			<Badge variant="secondary" class={[colorClasses[tag.colour], ' text-white']}>
+			<Badge variant="secondary" class={[badgeColorMap[tag.colour] || 'bg-gray-500', ' flex items-center gap-1 transition-transform hover:scale-105']}>
+				{#if tag.icon}
+					<tag.icon />
+				{/if}
 				{tag.tag}
 			</Badge>
 		{/each}
