@@ -9,7 +9,7 @@
 		{
 			title: 'Waypoint',
 			summary: 'AI-Powered Search and Rescue Prediction System. (Deltahacks 2026)',
-			image: '/waypoint.png',
+			image: '/projects/waypoint.webp',
 			status: 'completed',
 			stack: [
 				{ tag: '.Python', colour: 'dark_blue' },
@@ -34,7 +34,7 @@
 		{
 			title: 'Serene',
 			summary: 'A mental health platform for university and college students',
-			image: '/serene.png',
+			image: '/projects/serene.webp',
 			status: 'in-progress',
 			stack: [
 				{ tag: '.NET', colour: 'purple' },
@@ -59,7 +59,7 @@
 		{
 			title: 'Protoboard',
 			summary: 'A breadboard simulator made in Unity for school',
-			image: '/protoboard.webp',
+			image: '/projects/protoboard.webp',
 			status: 'completed',
 			stack: [
 				{ tag: 'C#', colour: 'purple' },
@@ -81,7 +81,7 @@
 		{
 			title: 'CEQuiz',
 			summary: 'A quizzing site containing computer engineering topics',
-			image: '/cequiz.png',
+			image: '/projects/cequiz.webp',
 			status: 'completed',
 			stack: [
 				{ tag: 'SvelteKit', colour: 'orange' },

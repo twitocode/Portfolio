@@ -6,7 +6,7 @@
 	import '../app.css';
 
 	let { children, data } = $props();
-	let pages = ['Home', 'About', 'Projects', 'Skills', "Hackathons", 'Education', 'Contact'];
+	let pages = ['Home', 'About', 'Projects', 'Skills', 'Hackathons', 'Education', 'Contact'];
 
 	let transitionDuration = 400;
 	let selected = $derived(page.url.pathname.split('/')[1] || 'home');
@@ -20,14 +20,15 @@
 		rel="stylesheet"
 	/>
 	<title>{data.url == '/' ? '' : data.url.split('/')[1] + ' |'} toheebeji</title>
-    <link rel="icon" type="image/x-icon" href="/logo.jpeg">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 </svelte:head>
-
 
 <div class="dark font-inter bg-background h-screen w-screen overflow-hidden text-white">
 	{#key data.url}
 		<div class="dot bg-grid flex h-full w-full items-center justify-center">
-			<div class="flex flex-col items-start space-y-2 p-4 w-full sm:w-9/10 md:w-7/8 lg:w-7/10 xl:w-6/10">
+			<div
+				class="flex w-full flex-col items-start space-y-2 p-4 sm:w-9/10 md:w-7/8 lg:w-7/10 xl:w-6/10"
+			>
 				<div class="bg-secondary text-primary w-full rounded-t-lg px-4 py-8 md:w-10/12">
 					<h1 class="flex items-center justify-between">
 						<span class="font-playwrite-it-moderna text-5xl font-medium md:text-5xl lg:text-6xl"
@@ -39,7 +40,9 @@
 				<div class="bg-secondary h-3/5 w-full space-y-2 rounded-tr-lg rounded-b-lg px-4 py-1">
 					<!-- navbar -->
 					<DesktopSidebar {pages} {selected} />
-          <span class="block md:hidden text-primary font-medium text-lg text-center font-space-mono">{selected[0].toUpperCase() + selected.substring(1, selected.length)}</span>
+					<span class="text-primary font-space-mono block text-center text-lg font-medium md:hidden"
+						>{selected[0].toUpperCase() + selected.substring(1, selected.length)}</span
+					>
 					<div
 						in:slide={{ axis: 'y', delay: transitionDuration, duration: transitionDuration }}
 						out:slide={{ axis: 'y', duration: transitionDuration }}
