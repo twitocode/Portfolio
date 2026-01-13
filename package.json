@@ -53,6 +53,7 @@
 	"dependencies": {
 		"@iconify/json": "^2.2.369",
 		"@spotify/web-api-ts-sdk": "^1.2.0",
+		"@vercel/analytics": "^1.6.1",
 		"gsap": "^3.13.0",
 		"query-string": "^9.2.2",
 		"svelte-exmarkdown": "^5.0.2",
