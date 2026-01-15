@@ -7,7 +7,7 @@
 	const { skill } = $props<{ skill: Skill }>();
 </script>
 
-<Card.Root class="w-full gap-2 space-y-0 rounded-sm border-0">
+<Card.Root class="w-full gap-2 space-y-0 rounded-sm border-0 h-full">
 	<Card.Header>
 		<Card.Title>
 			<span class="flex flex-col space-y-1">
