@@ -69,12 +69,12 @@
 	]);
 </script>
 
-<section
-	class="to-primary from-background bg-background mb-2 grid h-auto max-h-[1000px] w-full grid-cols-1 gap-4 overflow-auto rounded-md px-2 py-2 md:grid-cols-2"
->
-	{#each skills as skill}
-		<span class="flex w-full flex-col items-center space-y-2">
-			<SkillCard {skill} />
-		</span>
-	{/each}
+<section class="mb-2 w-full px-2 py-2">
+	<div class="columns-1 md:columns-2 gap-4 max-h-[1000px] overflow-auto">
+		{#each skills as skill}
+			<div class="break-inside-avoid mb-4 inline-block w-full">
+				<SkillCard {skill} />
+			</div>
+		{/each}
+	</div>
 </section>
