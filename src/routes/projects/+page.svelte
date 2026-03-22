@@ -16,8 +16,34 @@
 	import IconSvelte from '~icons/simple-icons/svelte';
 	import IconTypeScript from '~icons/simple-icons/typescript';
 	import IconUnity from '~icons/simple-icons/unity';
+	import IconNumpy from '~icons/simple-icons/numpy';
+	import IconPytorch from '~icons/simple-icons/pytorch';
 
 	const projects = $state<Array<Project>>([
+    {
+      title: "Toretto",
+      summary: "An AI powered app that helps family members watch over their elderly relatives.",
+      image: "/projects/toretto.webp",
+      status: "completed",
+      stack: [
+        { tag: 'React Native', colour: 'blue', icon: IconReact },
+				{ tag: 'FastAPI', colour: 'emerald', icon: IconFastAPI },
+				{ tag: 'PyTorch', colour: 'orange', icon: IconPytorch },
+				{ tag: 'NumPY', colour: 'teal', icon: IconNumpy },
+      ],
+      links: [
+				{
+					url: 'https://devpost.com/software/toretto',
+					alt: 'Devpost',
+					icon: IconDevpost
+				},
+				{
+					url: 'https://github.com/twitocode/machacks-2026',
+					alt: 'Source Code',
+					icon: IconGithub
+				}
+      ]
+    },
 		{
 			title: 'Waypoint',
 			summary: 'AI-Powered Search and Rescue Prediction System. (Deltahacks 2026).',
@@ -37,7 +63,7 @@
 					icon: IconWeb
 				},
 				{
-					url: 'https://devpost.com/software/stufyflow?ref_content=user-portfolio&ref_feature=in_progress',
+					url: 'https://devpost.com/software/searchable-ai',
 					alt: 'Devpost',
 					icon: IconDevpost
 				},
@@ -86,7 +112,7 @@
 			],
 			links: [
 				{
-					url: 'https://devpost.com/software/stufyflow?ref_content=user-portfolio&ref_feature=in_progress',
+					url: 'https://devpost.com/software/stufyflow',
 					alt: 'Devpost',
 					icon: IconDevpost
 				},

@@ -3,6 +3,18 @@
 	import type { Hackathon } from '$lib/types';
 
 	const hackathons = $state<Hackathon[]>([
+    {
+      name: "Machacks 2026",
+      location: "Hamilton ON, Canada",
+      imageUrl: "hackathons/machacks-2026.png",
+      date: "March 2026",
+      points: [
+        {
+          content:   "Worked on the mobile app and Gemini API integrations"
+        }
+      ],
+      devpostLink: "https://devpost.com/software/toretto",
+    },
 		{
 			name: 'Deltahacks 12',
 			location: 'Hamilton ON, Canada',
