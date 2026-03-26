@@ -9,29 +9,56 @@
 	import IconDevpost from '~icons/simple-icons/devpost';
 	import IconDotNet from '~icons/simple-icons/dotnet';
 	import IconFastAPI from '~icons/simple-icons/fastapi';
+	import IconGO from '~icons/simple-icons/go';
 	import IconNext from '~icons/simple-icons/nextdotjs';
+	import IconNumpy from '~icons/simple-icons/numpy';
 	import IconPostgres from '~icons/simple-icons/postgresql';
 	import IconPython from '~icons/simple-icons/python';
+	import IconPytorch from '~icons/simple-icons/pytorch';
 	import IconReact from '~icons/simple-icons/react';
+	import IconRedis from '~icons/simple-icons/redis';
 	import IconSvelte from '~icons/simple-icons/svelte';
 	import IconTypeScript from '~icons/simple-icons/typescript';
 	import IconUnity from '~icons/simple-icons/unity';
-	import IconNumpy from '~icons/simple-icons/numpy';
-	import IconPytorch from '~icons/simple-icons/pytorch';
 
 	const projects = $state<Array<Project>>([
-    {
-      title: "Toretto",
-      summary: "An AI powered app that helps family members watch over their elderly relatives.",
-      image: "/projects/toretto.webp",
-      status: "completed",
-      stack: [
-        { tag: 'React Native', colour: 'blue', icon: IconReact },
+		{
+			title: 'Chronoflow',
+			summary: 'Stock dashboard with live prices, charts, price alerts, and AI-assisted analysis',
+			image: '/projects/chronoflow.webp',
+			status: 'completed',
+			stack: [
+				{ tag: 'React', colour: 'blue_light', icon: IconReact },
+				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript },
+				{ tag: 'Go', colour: 'go', icon: IconGO },
+				{ tag: 'PostgreSQL', colour: 'sky', icon: IconPostgres },
+				{ tag: 'Redis', colour: 'red', icon: IconRedis }
+			],
+			links: [
+				{
+					url: 'https://github.com/twitocode/chronoflow',
+					alt: 'Source Code',
+					icon: IconGithub
+				},
+				{
+					url: 'https://chronoflow-self.vercel.app',
+					alt: 'Website',
+					icon: IconWeb
+				}
+			]
+		},
+		{
+			title: 'Toretto',
+			summary: 'An AI powered app that helps family members watch over their elderly relatives.',
+			image: '/projects/toretto.webp',
+			status: 'completed',
+			stack: [
+				{ tag: 'React Native', colour: 'blue_light', icon: IconReact },
 				{ tag: 'FastAPI', colour: 'emerald', icon: IconFastAPI },
 				{ tag: 'PyTorch', colour: 'orange', icon: IconPytorch },
-				{ tag: 'NumPY', colour: 'teal', icon: IconNumpy },
-      ],
-      links: [
+				{ tag: 'NumPY', colour: 'teal', icon: IconNumpy }
+			],
+			links: [
 				{
 					url: 'https://devpost.com/software/toretto',
 					alt: 'Devpost',
@@ -42,8 +69,8 @@
 					alt: 'Source Code',
 					icon: IconGithub
 				}
-      ]
-    },
+			]
+		},
 		{
 			title: 'Waypoint',
 			summary: 'AI-Powered Search and Rescue Prediction System. (Deltahacks 2026).',
@@ -53,7 +80,7 @@
 				{ tag: 'Python', colour: 'dark_blue', icon: IconPython },
 				{ tag: 'FastAPI', colour: 'emerald', icon: IconFastAPI },
 
-				{ tag: 'React', colour: 'blue', icon: IconReact },
+				{ tag: 'React', colour: 'blue_light', icon: IconReact },
 				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript }
 			],
 			links: [
@@ -82,7 +109,7 @@
 			stack: [
 				{ tag: '.NET', colour: 'purple', icon: IconDotNet },
 				{ tag: 'PostgreSQL', colour: 'sky', icon: IconPostgres },
-				{ tag: 'React', colour: 'blue', icon: IconReact },
+				{ tag: 'React', colour: 'blue_light', icon: IconReact },
 				{ tag: 'Next', colour: 'black', icon: IconNext },
 				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript }
 			],
@@ -106,7 +133,7 @@
 			image: '/projects/studyflow.webp',
 			status: 'completed',
 			stack: [
-				{ tag: 'React Native', colour: 'blue', icon: IconReact },
+				{ tag: 'React Native', colour: 'blue_light', icon: IconReact },
 				{ tag: 'Groq', colour: 'orange', icon: IconRobot },
 				{ tag: 'FastAPI', colour: 'emerald', icon: IconFastAPI }
 			],

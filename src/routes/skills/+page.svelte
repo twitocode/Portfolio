@@ -19,6 +19,7 @@
 	import IconSvelte from '~icons/simple-icons/svelte';
 	import IconTailwind from '~icons/simple-icons/tailwindcss';
 	import IconTypeScript from '~icons/simple-icons/typescript';
+	import IconGO from '~icons/simple-icons/go';
 
 	const skills = $state<Array<Skill>>([
 		{
@@ -29,14 +30,16 @@
 				{ tag: '.NET', colour: 'purple', icon: IconDotNet },
 				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript },
 				{ tag: 'Svelte', colour: 'orange', icon: IconSvelte },
-				{ tag: 'React', colour: 'blue', icon: IconReact }
+				{ tag: 'React', colour: 'blue_light', icon: IconReact },
+        				{ tag: 'Go', colour: 'go', icon: IconGO },
+
 			]
 		},
 		{
 			name: 'Databases',
 			icon: IconDatabase,
 			items: [
-				{ tag: 'PostgreSQL', colour: 'blue', icon: IconPostgres },
+				{ tag: 'PostgreSQL', colour: 'sky', icon: IconPostgres },
 				{ tag: 'MongoDB', colour: 'green', icon: IconMongoDB }
 			]
 		},
@@ -45,7 +48,7 @@
 			icon: IconToolbox,
 			items: [
 				{ tag: 'Git', colour: 'orange', icon: IconGit },
-				{ tag: 'Docker', colour: 'blue', icon: IconDocker },
+				{ tag: 'Docker', colour: 'blue_deep', icon: IconDocker },
 				{ tag: 'Google Cloud', colour: 'yellow', icon: IconGoogleCloud }
 			]
 		},
@@ -54,7 +57,7 @@
 			icon: IconPalette,
 			items: [
 				{ tag: 'Figma', colour: 'purple', icon: IconFigma },
-				{ tag: 'Tailwind CSS', colour: 'blue', icon: IconTailwind },
+				{ tag: 'Tailwind CSS', colour: 'cyan', icon: IconTailwind },
 				{ tag: 'Responsive Design', colour: 'green' }
 			]
 		},
