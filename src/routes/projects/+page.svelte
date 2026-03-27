@@ -74,7 +74,7 @@
 		},
 		{
 			title: 'Toretto',
-			summary: 'An AI powered app that helps family members watch over their elderly relatives.',
+			summary: 'An AI powered app that helps family members watch over their elderly relatives. (Machacks 2026)',
 			image: '/projects/toretto.webp',
 			status: 'completed',
 			stack: [
@@ -130,7 +130,7 @@
 		{
 			title: 'Studyflow',
 			summary:
-				'Helping high school students transform doom-scrolling on social media into productive study breaks through active recall flash cards.',
+				'Helping high school students transform doom-scrolling on social media into productive study breaks through active recall flash cards. (RythmHacks 2025).',
 			image: '/projects/studyflow.webp',
 			status: 'completed',
 			stack: [
