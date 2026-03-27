@@ -48,6 +48,31 @@
 			]
 		},
 		{
+			title: 'Serene',
+			summary: 'A mental health platform for university and college students.',
+			image: '/projects/serene.webp',
+			status: 'in-progress',
+			stack: [
+				{ tag: '.NET', colour: 'purple', icon: IconDotNet },
+				{ tag: 'PostgreSQL', colour: 'sky', icon: IconPostgres },
+				{ tag: 'React', colour: 'blue_light', icon: IconReact },
+				{ tag: 'Next', colour: 'black', icon: IconNext },
+				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript }
+			],
+			links: [
+				{
+					url: 'https://serene-opal.vercel.app',
+					alt: 'Link',
+					icon: IconWeb
+				},
+				{
+					url: 'https://github.com/twitocode/serene',
+					alt: 'Source Code',
+					icon: IconGithub
+				}
+			]
+		},
+		{
 			title: 'Toretto',
 			summary: 'An AI powered app that helps family members watch over their elderly relatives.',
 			image: '/projects/toretto.webp',
@@ -101,31 +126,7 @@
 				}
 			]
 		},
-		{
-			title: 'Serene',
-			summary: 'A mental health platform for university and college students.',
-			image: '/projects/serene.webp',
-			status: 'in-progress',
-			stack: [
-				{ tag: '.NET', colour: 'purple', icon: IconDotNet },
-				{ tag: 'PostgreSQL', colour: 'sky', icon: IconPostgres },
-				{ tag: 'React', colour: 'blue_light', icon: IconReact },
-				{ tag: 'Next', colour: 'black', icon: IconNext },
-				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript }
-			],
-			links: [
-				{
-					url: 'https://serene-opal.vercel.app',
-					alt: 'Link',
-					icon: IconWeb
-				},
-				{
-					url: 'https://github.com/twitocode/serene',
-					alt: 'Source Code',
-					icon: IconGithub
-				}
-			]
-		},
+
 		{
 			title: 'Studyflow',
 			summary:
