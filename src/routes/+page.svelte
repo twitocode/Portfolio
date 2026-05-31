@@ -1,7 +1,5 @@
 <script lang="ts">
-	import { SpotifyApi } from "@spotify/web-api-ts-sdk";
-	import WordRotator from "../lib/components/word-rotator.svelte";
-  import saturn from "$lib/assets/saturn.gif"
+	import saturn from '$lib/assets/saturn.gif';
 </script>
 
 <svelte:head>
@@ -9,18 +7,21 @@
 </svelte:head>
 
 <section
-	class="to-primary from-background bg-background mb-2 grid h-auto w-full grid-cols-1 md:grid-cols-2 gap-4 rounded-md px-2 pt-2"
+	class="to-primary from-background bg-background mb-2 grid h-auto w-full grid-cols-1 gap-4 rounded-md px-2 pt-2 md:grid-cols-2"
 >
 	<div>
 		<img src={saturn} class="rounded-md shadow-lg" alt="Saturn GIF" fetchpriority="high" />
 	</div>
-	<div class="flex items-center space-y-4 md:items-start flex-col justify-center h-full">
-    <h1 class="font-bold text-4xl">Hello!</h1>
-    <p class="text-lg text-white">
-     I'm a programmer from Ontario, Canada!🍁
-
-    </p>
-		<div class="">
+	<div class="flex h-full flex-col items-center justify-center space-y-4 md:items-start">
+		<h1 class="text-4xl font-bold">Hello!</h1>
+		<p class="text-lg text-white">
+			I'm a software engineer from Ontario, Canada!🍁 Currently attending <a
+				href="https://www.mcmaster.ca"
+				class=" underline underline-offset-8 hover:opacity-50">McMaster U</a
+			>.
+		</p>
+		<div class="text-primary">
+			Check out my <a href="/toheeb_eji_resume.pdf" class=" underline underline-offset-8 hover:opacity-50">Resume</a>
 		</div>
 	</div>
 </section>
