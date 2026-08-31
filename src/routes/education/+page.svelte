@@ -13,7 +13,7 @@
 			icon: IconSchoolOutline,
 			points: [
         {
-          content: "GPA - 3.76"
+          content: "GPA - 3.78"
         }
       ]
 		},

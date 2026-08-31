@@ -12,14 +12,15 @@
 	import IconDotNet from '~icons/simple-icons/dotnet';
 	import IconFigma from '~icons/simple-icons/figma';
 	import IconGit from '~icons/simple-icons/git';
+	import IconGO from '~icons/simple-icons/go';
 	import IconGoogleCloud from '~icons/simple-icons/googlecloud';
 	import IconMongoDB from '~icons/simple-icons/mongodb';
 	import IconPostgres from '~icons/simple-icons/postgresql';
+	import IconSQLite from '~icons/simple-icons/sqlite';
 	import IconReact from '~icons/simple-icons/react';
 	import IconSvelte from '~icons/simple-icons/svelte';
 	import IconTailwind from '~icons/simple-icons/tailwindcss';
 	import IconTypeScript from '~icons/simple-icons/typescript';
-	import IconGO from '~icons/simple-icons/go';
 
 	const skills = $state<Array<Skill>>([
 		{
@@ -31,8 +32,7 @@
 				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript },
 				{ tag: 'Svelte', colour: 'orange', icon: IconSvelte },
 				{ tag: 'React', colour: 'blue_light', icon: IconReact },
-        				{ tag: 'Go', colour: 'go', icon: IconGO },
-
+				{ tag: 'Go', colour: 'go', icon: IconGO }
 			]
 		},
 		{
@@ -40,6 +40,7 @@
 			icon: IconDatabase,
 			items: [
 				{ tag: 'PostgreSQL', colour: 'sky', icon: IconPostgres },
+				{ tag: 'SQLite', colour: 'sky', icon: IconSQLite },
 				{ tag: 'MongoDB', colour: 'green', icon: IconMongoDB }
 			]
 		},
@@ -72,10 +73,12 @@
 	]);
 </script>
 
-<section class="to-primary from-background bg-background mb-2 grid h-auto max-h-[500px] w-full overflow-auto rounded-md px-2 py-2 grid-cols-1 md:grid-cols-2 gap-3 ">
-		{#each skills as skill}
-			<div class="break-inside-avoid inline-block w-full">
-				<SkillCard {skill} />
-			</div>
-		{/each}
+<section
+	class="to-primary from-background bg-background mb-2 grid h-auto max-h-[500px] w-full grid-cols-1 gap-3 overflow-auto rounded-md px-2 py-2 md:grid-cols-2"
+>
+	{#each skills as skill}
+		<div class="inline-block w-full break-inside-avoid">
+			<SkillCard {skill} />
+		</div>
+	{/each}
 </section>

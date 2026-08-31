@@ -13,6 +13,7 @@
 	import IconNext from '~icons/simple-icons/nextdotjs';
 	import IconNumpy from '~icons/simple-icons/numpy';
 	import IconPostgres from '~icons/simple-icons/postgresql';
+	import IconSQLite from '~icons/simple-icons/sqlite';
 	import IconPython from '~icons/simple-icons/python';
 	import IconPytorch from '~icons/simple-icons/pytorch';
 	import IconReact from '~icons/simple-icons/react';
@@ -22,6 +23,25 @@
 	import IconUnity from '~icons/simple-icons/unity';
 
 	const projects = $state<Array<Project>>([
+		{
+			title: 'Sift',
+			summary: 'A simple search engine created from scratch',
+			image: '/projects/sift.webp',
+			status: 'completed',
+			stack: [
+				{ tag: 'Go', colour: 'go', icon: IconGO },
+				{ tag: 'SQLite', colour: 'sky', icon: IconSQLite },
+				{ tag: 'React', colour: 'blue_light', icon: IconReact },
+				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript },
+			],
+			links: [
+				{
+					url: 'https://github.com/twitocode/sift',
+					alt: 'Source Code',
+					icon: IconGithub
+				}
+			]
+		},
 		{
 			title: 'Chronoflow',
 			summary: 'Stock dashboard with live prices, charts, price alerts, and AI-assisted analysis',
@@ -74,7 +94,8 @@
 		},
 		{
 			title: 'Toretto',
-			summary: 'An AI powered app that helps family members watch over their elderly relatives. (Machacks 2026)',
+			summary:
+				'An AI powered app that helps family members watch over their elderly relatives. (Machacks 2026)',
 			image: '/projects/toretto.webp',
 			status: 'completed',
 			stack: [
