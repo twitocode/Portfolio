@@ -16,8 +16,8 @@
 	import IconGoogleCloud from '~icons/simple-icons/googlecloud';
 	import IconMongoDB from '~icons/simple-icons/mongodb';
 	import IconPostgres from '~icons/simple-icons/postgresql';
-	import IconSQLite from '~icons/simple-icons/sqlite';
 	import IconReact from '~icons/simple-icons/react';
+	import IconSQLite from '~icons/simple-icons/sqlite';
 	import IconSvelte from '~icons/simple-icons/svelte';
 	import IconTailwind from '~icons/simple-icons/tailwindcss';
 	import IconTypeScript from '~icons/simple-icons/typescript';
@@ -74,7 +74,7 @@
 </script>
 
 <section
-	class="to-primary from-background bg-background mb-2 grid h-auto max-h-[500px] w-full grid-cols-1 gap-3 overflow-auto rounded-2xl p-2 md:grid-cols-2"
+	class="to-primary from-background bg-background grid h-auto max-h-[500px] w-full grid-cols-1 gap-3 overflow-auto rounded-2xl p-2 md:grid-cols-2"
 >
 	{#each skills as skill}
 		<div class="inline-block w-full break-inside-avoid">

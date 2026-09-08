@@ -35,7 +35,7 @@
 </script>
 
 <section
-	class="to-primary from-background bg-background mb-2 grid h-auto max-h-[500px] w-full grid-cols-1 gap-2.25 overflow-auto rounded-2xl p-2"
+	class="to-primary from-background bg-background grid h-auto max-h-[500px] w-full grid-cols-1 gap-2.25 overflow-auto rounded-2xl p-2"
 >
 	{#each schools as school, i}
 		<span class="flex flex-col items-center w-full space-y-2">

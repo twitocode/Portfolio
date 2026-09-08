@@ -7,7 +7,7 @@
 </svelte:head>
 
 <section
-	class="to-primary from-background bg-background mb-2 grid h-auto w-full grid-cols-1 gap-4 rounded-2xl px-2 pt-2 md:grid-cols-2"
+	class="to-primary from-background bg-background grid h-auto w-full grid-cols-1 gap-4 rounded-2xl px-2 pt-2 md:grid-cols-2"
 >
 	<div>
 		<img src={saturn} class="rounded-lg shadow-lg" alt="Saturn GIF" fetchpriority="high" />
