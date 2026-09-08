@@ -28,7 +28,7 @@
 		<Card.Description>{project.summary}</Card.Description>
 		{#each project.links as link}
 			<a
-				class="text-accent-foreground flex items-center space-x-1 hover:underline hover:opacity-50"
+				class="text-accent flex items-center space-x-1 hover:text-accent hover:underline"
 				href={link.url}
         target="_blank"
 		rel="noopener noreferrer"
