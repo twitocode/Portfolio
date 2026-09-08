@@ -220,7 +220,7 @@
 </script>
 
 <section
-	class="to-primary from-background bg-background mb-2 grid h-auto max-h-[500px] w-full grid-cols-1 gap-y-2.25 overflow-auto rounded-md px-2 py-2 md:grid-cols-2 md:gap-2.25"
+	class="to-primary from-background bg-background mb-2 grid h-auto max-h-[500px] w-full grid-cols-1 gap-y-2.25 overflow-auto rounded-2xl p-2 md:grid-cols-2 md:gap-2.25"
 >
 	{#each projects as project}
 		<ProjectCard {project} />

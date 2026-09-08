@@ -7,10 +7,10 @@
 </svelte:head>
 
 <section
-	class="to-primary from-background bg-background mb-2 grid h-auto w-full grid-cols-1 gap-4 rounded-md px-2 pt-2 md:grid-cols-2"
+	class="to-primary from-background bg-background mb-2 grid h-auto w-full grid-cols-1 gap-4 rounded-2xl px-2 pt-2 md:grid-cols-2"
 >
 	<div>
-		<img src={saturn} class="rounded-md shadow-lg" alt="Saturn GIF" fetchpriority="high" />
+		<img src={saturn} class="rounded-lg shadow-lg" alt="Saturn GIF" fetchpriority="high" />
 	</div>
 	<div class="flex h-full flex-col items-center justify-center space-y-4 md:items-start">
 		<h1 class="text-4xl font-bold">Hello!</h1>

@@ -9,7 +9,7 @@
 	const { project } = $props<{ project: Project }>();
 </script>
 
-<Card.Root class="rounded-sm border-0">
+<Card.Root class="rounded-lg border-0">
 	<Card.Header>
 		<Card.Title class="font-space-mono flex items-center justify-between text-xl">
 			<span>{project.title}</span>

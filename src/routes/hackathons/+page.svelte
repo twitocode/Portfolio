@@ -45,7 +45,7 @@
 </script>
 
 <section
-	class="to-primary from-background bg-background mb-2 grid h-auto max-h-[500px] w-full grid-cols-1 gap-2.25 overflow-auto rounded-md px-2 py-2"
+	class="to-primary from-background bg-background mb-2 grid h-auto max-h-[500px] w-full grid-cols-1 gap-2.25 overflow-auto rounded-2xl p-2"
 >
 	{#each hackathons as hackathon, i}
 		<span class="flex w-full flex-col items-center space-y-2">

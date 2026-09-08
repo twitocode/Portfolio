@@ -29,7 +29,7 @@
 			<div
 				class="flex w-full flex-col items-start space-y-2 p-4 sm:w-9/10 md:w-7/8 lg:w-7/10 xl:w-6/10"
 			>
-				<div class="bg-secondary text-primary w-full rounded-t-lg px-4 py-8 md:w-10/12">
+				<div class="bg-secondary text-primary w-full rounded-t-3xl px-4 py-8 md:w-10/12">
 					<h1 class="flex items-center justify-between">
 						<span class="font-playwrite-it-moderna text-5xl font-medium md:text-5xl lg:text-6xl"
 							>toheeb eji ⋆˚✿˖°</span
@@ -37,7 +37,7 @@
 						<MobileSidebar {pages} {selected} />
 					</h1>
 				</div>
-				<div class="bg-secondary h-3/5 w-full space-y-2 rounded-tr-lg rounded-b-lg px-4 py-1">
+				<div class="bg-secondary h-3/5 w-full space-y-2 rounded-tr-3xl rounded-b-3xl p-2">
 					<!-- navbar -->
 					<DesktopSidebar {pages} {selected} />
 					<span class="text-primary font-space-mono block text-center text-lg font-medium md:hidden"

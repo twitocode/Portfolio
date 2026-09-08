@@ -1,5 +1,5 @@
 <main
-	class="to-primary from-background bg-background mb-2 h-auto max-h-[500px] w-full overflow-auto rounded-md px-2 py-2"
+	class="to-primary from-background bg-background mb-2 h-auto max-h-[500px] w-full overflow-auto rounded-2xl p-2"
 >
 	I’m Toheeb, a <strong>Computer Science</strong> student currently attending McMaster University in
 	Hamilton, Ontario. I have a passion for building practical and creative solutions through code.

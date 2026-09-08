@@ -18,7 +18,7 @@
 	</li>
 {/snippet}
 
-<Card.Root class="space-y-0 rounded-sm border-0 gap-2 w-full">
+<Card.Root class="space-y-0 rounded-lg border-0 gap-2 w-full">
 	<Card.Header>
 		<Card.Title
 			class={['flex flex-col justify-center', education.program ? 'space-y-4' : 'space-y-1']}

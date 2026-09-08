@@ -3,7 +3,7 @@
 </script>
 
 <section
-	class="to-primary from-background bg-background mb-2 flex h-auto max-h-[500px] w-full flex-col space-y-2 overflow-auto rounded-md px-2 py-2"
+	class="to-primary from-background bg-background mb-2 flex h-auto max-h-[500px] w-full flex-col space-y-2 overflow-auto rounded-2xl p-2"
 >
 	<div class="flex items-center gap-2"><Mail /> toheebeji@gmail.com</div>
 	<a
