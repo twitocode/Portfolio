@@ -37,7 +37,7 @@
 						<MobileSidebar {pages} {selected} />
 					</h1>
 				</div>
-				<div class="bg-secondary h-3/5 w-full space-y-2 rounded-tr-3xl rounded-b-3xl p-2">
+				<div class="bg-secondary h-3/5 w-full space-y-2 rounded-t-0 md:rounded-tr-3xl rounded-b-3xl p-2">
 					<!-- navbar -->
 					<DesktopSidebar {pages} {selected} />
 					<span class="text-primary font-space-mono block text-center text-lg font-medium md:hidden"
