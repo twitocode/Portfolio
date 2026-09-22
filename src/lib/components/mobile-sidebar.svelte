@@ -20,7 +20,7 @@
 	class={[
 		open && 'absolute',
 		!open && 'hidden',
-		'mobile-nav top-full left-0 h-screen w-screen bg-black opacity-85 z-10'
+		'mobile-nav top-full left-0 z-10 h-screen w-screen bg-black opacity-85'
 	]}
 >
 	<div
@@ -34,12 +34,12 @@
 				onclick={() => {
 					open = false;
 					let tween = gsap.to('.mobile-nav', {
-						top: "100%"
+						top: '100%'
 					});
 					tween.play();
 				}}
 			>
-				{page}
+				{page.toString().toLowerCase()}
 			</a>
 		{/each}
 	</div>

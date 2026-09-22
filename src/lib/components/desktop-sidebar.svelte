@@ -8,7 +8,7 @@
 			href="/{page == 'Home' ? '' : page.toString().toLowerCase()}"
 			class="font-space-mono hover:opacity-50 {page.toLowerCase() == selected && 'text-primary'}"
 		>
-			{page}
+			{page.toString().toLowerCase()}
 		</a>
 		{#if index != pages.length - 1}
 			<p>•</p>

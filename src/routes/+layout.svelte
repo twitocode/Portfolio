@@ -41,7 +41,7 @@
 					<!-- navbar -->
 					<DesktopSidebar {pages} {selected} />
 					<span class="text-primary font-space-mono block text-center text-lg font-medium md:hidden"
-						>{selected[0].toUpperCase() + selected.substring(1, selected.length)}</span
+						>{selected}</span
 					>
 					<div
 						in:slide={{ axis: 'y', delay: transitionDuration, duration: transitionDuration }}
