@@ -2,7 +2,7 @@
 	const { pages, selected } = $props();
 </script>
 
-<div class=" hidden space-x-2 text-white md:flex">
+<div class=" hidden space-x-2 text-white md:flex px-2">
 	{#each pages as page, index}
 		<a
 			href="/{page == 'Home' ? '' : page.toString().toLowerCase()}"
