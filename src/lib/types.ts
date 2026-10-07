@@ -19,6 +19,7 @@ export type Project = {
 		icon?: Component<SvelteHTMLElements['svg']>;
 	}[];
 };
+
 export type Hackathon = {
 	name: string;
 	imageUrl: string;
@@ -26,6 +27,15 @@ export type Hackathon = {
 	date: string;
 	points: Point[];
 	devpostLink: string
+};
+
+export type Experience = {
+	title: string;
+	organization: string;
+	imageUrl: string;
+	startDate: string;
+  points: Point[];
+	endDate?: string;
 };
 
 export type Point = {

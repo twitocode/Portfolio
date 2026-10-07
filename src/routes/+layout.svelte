@@ -6,7 +6,16 @@
 	import '../app.css';
 
 	let { children, data } = $props();
-	let pages = ['Home', 'About', 'Projects', 'Skills', 'Hackathons', 'Education', 'Contact'];
+	let pages = [
+		'Home',
+		'Projects',
+		'Experience',
+		'Skills',
+		'Hackathons',
+		'Education',
+		'About',
+		'Contact'
+	];
 
 	let transitionDuration = 400;
 	let selected = $derived(page.url.pathname.split('/')[1] || 'home');
@@ -37,7 +46,9 @@
 						<MobileSidebar {pages} {selected} />
 					</h1>
 				</div>
-				<div class="bg-secondary h-3/5 w-full space-y-2 rounded-t-0 md:rounded-tr-3xl rounded-b-3xl p-2">
+				<div
+					class="bg-secondary rounded-t-0 h-3/5 w-full space-y-2 rounded-b-3xl p-2 md:rounded-tr-3xl"
+				>
 					<!-- navbar -->
 					<DesktopSidebar {pages} {selected} />
 					<span class="text-primary font-space-mono block text-center text-lg font-medium md:hidden"
