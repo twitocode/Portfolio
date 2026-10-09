@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Github, Linkedin, Mail } from '@lucide/svelte';
+	import { Github, Linkedin, Mail } from "@lucide/svelte";
 </script>
 
 <section

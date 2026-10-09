@@ -1,29 +1,29 @@
 <script lang="ts">
-	import ExperienceCard from '$lib/components/experience.card.svelte';
-	import type { Experience } from '$lib/types';
+	import ExperienceCard from "#lib/components/experience.card.svelte";
+	import type { Experience } from "#lib/types.js";
 
 	const experiences = $state<Experience[]>([
 		{
-			title: 'Web Developer',
-			organization: 'McMaster Computer Science Society',
-			startDate: 'October 2026',
+			title: "Web Developer",
+			organization: "McMaster Computer Science Society",
+			startDate: "October 2026",
 			points: [
 				{
-					content: 'Web Developer'
+					content: "Web Developer"
 				}
 			],
-			imageUrl: 'experience/css.webp'
+			imageUrl: "experience/css.webp"
 		},
 		{
-			title: '',
-			organization: 'Google Developer Club McMaster',
-			startDate: 'October 2026',
+			title: "",
+			organization: "Google Developer Club McMaster",
+			startDate: "October 2026",
 			points: [
 				{
-					content: 'Software Engineer'
+					content: "Software Engineer"
 				}
 			],
-			imageUrl: 'experience/gdg.webp'
+			imageUrl: "experience/gdg.webp"
 		}
 	]);
 </script>

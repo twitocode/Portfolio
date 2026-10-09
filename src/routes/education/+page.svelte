@@ -1,33 +1,33 @@
 <script lang="ts">
-	import EducationCard from '$lib/components/education-card.svelte';
-	import type { Education } from '$lib/types';
-	import IconSchoolOutline from '~icons/mdi/school-outline';
-	import IconArrowDown from '~icons/mdi/arrow-down';
+	import EducationCard from "#lib/components/education-card.svelte";
+	import type { Education } from "#lib/types.js";
+	import IconSchoolOutline from "~icons/mdi/school-outline";
+	import IconArrowDown from "~icons/mdi/arrow-down";
 
 	const schools = $state<Array<Education>>([
 		{
-			name: 'McMaster University',
-			program: 'Honours Computer Science',
-			startDate: 'Sept 2025',
-			graduationDate: 'Present',
+			name: "McMaster University",
+			program: "Honours Computer Science",
+			startDate: "Sept 2025",
+			graduationDate: "Present",
 			icon: IconSchoolOutline,
 			points: [
-        {
-          content: "GPA - 3.78"
-        }
-      ]
+				{
+					content: "GPA - 3.78"
+				}
+			]
 		},
 		{
-			name: 'Bishop Ryan Catholic Secondary School',
-			startDate: 'Sept 2021',
-			graduationDate: 'June 2025',
+			name: "Bishop Ryan Catholic Secondary School",
+			startDate: "Sept 2021",
+			graduationDate: "June 2025",
 			icon: IconSchoolOutline,
 			points: [
 				{
 					content: `HWCDSB Director's Award Winner`
 				},
 				{
-					content: 'Computer Studies Grad-Award Winner'
+					content: "Computer Studies Grad-Award Winner"
 				}
 			]
 		}
@@ -38,7 +38,7 @@
 	class="to-primary from-background bg-background grid h-auto max-h-[500px] w-full grid-cols-1 gap-2.25 overflow-auto rounded-2xl p-2"
 >
 	{#each schools as school, i}
-		<span class="flex flex-col items-center w-full space-y-2">
+		<span class="flex w-full flex-col items-center space-y-2">
 			<EducationCard education={school} />
 			<!-- {#if i < schools.length - 1}
         <IconArrowDown />

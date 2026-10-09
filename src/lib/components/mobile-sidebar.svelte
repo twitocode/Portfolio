@@ -1,13 +1,13 @@
 <script lang="ts">
-	import { gsap } from 'gsap';
-	import IconHamburgerMenu from '~icons/ci/hamburger-md';
+	import { gsap } from "gsap";
+	import IconHamburgerMenu from "~icons/ci/hamburger-md";
 
 	const { pages, selected } = $props();
 	let open = $state(false);
 
 	function toggleNavbar() {
 		open = !open;
-		let tween = gsap.to('.mobile-nav', {
+		let tween = gsap.to(".mobile-nav", {
 			top: 0
 		});
 		tween.play();
@@ -18,9 +18,9 @@
 
 <div
 	class={[
-		open && 'absolute',
-		!open && 'hidden',
-		'mobile-nav top-full left-0 z-10 h-screen w-screen bg-black opacity-85'
+		open && "absolute",
+		!open && "hidden",
+		"mobile-nav top-full left-0 z-10 h-screen w-screen bg-black opacity-85"
 	]}
 >
 	<div
@@ -33,8 +33,8 @@
 					'text-primary'}"
 				onclick={() => {
 					open = false;
-					let tween = gsap.to('.mobile-nav', {
-						top: '100%'
+					let tween = gsap.to(".mobile-nav", {
+						top: "100%"
 					});
 					tween.play();
 				}}

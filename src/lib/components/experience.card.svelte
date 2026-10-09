@@ -1,6 +1,6 @@
 <script lang="ts">
-	import * as Card from '$lib/components/ui/card/index.js';
-	import type { Experience, Point } from '$lib/types';
+	import * as Card from "#lib/components/ui/card/index.js";
+	import type { Experience, Point } from "#lib/types.js";
 
 	const { experience } = $props<{ experience: Experience }>();
 </script>
@@ -21,7 +21,7 @@
 <Card.Root class="w-full gap-2 space-y-0 rounded-lg border-0">
 	<Card.Header>
 		<Card.Title
-			class={['flex flex-col justify-center', experience.title ? 'space-y-4' : 'space-y-1']}
+			class={["flex flex-col justify-center", experience.title ? "space-y-4" : "space-y-1"]}
 		>
 			<span class="flex flex-col space-y-1">
 				<span class="font-space-mono flex items-center space-x-3">
@@ -30,10 +30,10 @@
 				</span>
 			</span>
 			<span class="flex items-center space-x-1">
-        <span class="text-sm text-gray-50 opacity-50">{experience.startDate}</span>
-        <span class=" text-gray-50 opacity-50">-</span>
-        <span class="text-sm text-gray-50 opacity-50">{experience.endDate ?? "Present"}</span>
-      </span>
+				<span class="text-sm text-gray-50 opacity-50">{experience.startDate}</span>
+				<span class=" text-gray-50 opacity-50">-</span>
+				<span class="text-sm text-gray-50 opacity-50">{experience.endDate ?? "Present"}</span>
+			</span>
 		</Card.Title>
 	</Card.Header>
 	{#if experience.points.length > 0}

@@ -1,10 +1,10 @@
-import type { Component } from 'svelte';
-import type { SvelteHTMLElements } from 'svelte/elements';
+import type { Component } from "svelte";
+import type { SvelteHTMLElements } from "svelte/elements";
 
 export type StackItem = {
 	colour: string;
 	tag: string;
-	icon?: Component<SvelteHTMLElements['svg']>;
+	icon?: Component<SvelteHTMLElements["svg"]>;
 };
 
 export type Project = {
@@ -12,11 +12,11 @@ export type Project = {
 	summary: string;
 	image: string;
 	stack: StackItem[];
-	status: 'completed' | 'in-progress';
+	status: "completed" | "in-progress";
 	links: {
 		url: string;
 		alt: string;
-		icon?: Component<SvelteHTMLElements['svg']>;
+		icon?: Component<SvelteHTMLElements["svg"]>;
 	}[];
 };
 
@@ -26,7 +26,7 @@ export type Hackathon = {
 	location: string;
 	date: string;
 	points: Point[];
-	devpostLink: string
+	devpostLink: string;
 };
 
 export type Experience = {
@@ -34,7 +34,7 @@ export type Experience = {
 	organization: string;
 	imageUrl: string;
 	startDate: string;
-  points: Point[];
+	points: Point[];
 	endDate?: string;
 };
 
@@ -48,11 +48,11 @@ export type Education = {
 	graduationDate: string;
 	points: Point[];
 	program?: string;
-	icon: Component<SvelteHTMLElements['svg']>;
+	icon: Component<SvelteHTMLElements["svg"]>;
 };
 
 export type Skill = {
 	name: string;
-	icon: Component<SvelteHTMLElements['svg']>;
+	icon: Component<SvelteHTMLElements["svg"]>;
 	items: StackItem[];
 };

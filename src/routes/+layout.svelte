@@ -1,24 +1,39 @@
 <script lang="ts">
-	import { page } from '$app/state';
-	import DesktopSidebar from '$lib/components/desktop-sidebar.svelte';
-	import MobileSidebar from '$lib/components/mobile-sidebar.svelte';
-	import { slide } from 'svelte/transition';
-	import '../app.css';
+	import DesktopSidebar from "#lib/components/desktop-sidebar.svelte";
+	import MobileSidebar from "#lib/components/mobile-sidebar.svelte";
+	import { dev } from "$app/env";
+	import { page } from "$app/state";
+	import { inject, pageview } from "@vercel/analytics";
+	import { slide } from "svelte/transition";
+	import "../app.css";
 
 	let { children, data } = $props();
+
+	// @vercel/analytics/sveltekit imports $app/stores, which SvelteKit 3 removed
+	inject({
+		mode: dev ? "development" : "production",
+		framework: "sveltekit",
+		disableAutoTrack: true
+	});
+
+	$effect(() => {
+		if (page.route.id) {
+			pageview({ route: page.route.id, path: page.url.pathname });
+		}
+	});
 	let pages = [
-		'Home',
-		'Projects',
-		'Experience',
-		'Skills',
-		'Hackathons',
-		'Education',
-		'About',
-		'Contact'
+		"Home",
+		"Projects",
+		"Experience",
+		"Skills",
+		"Hackathons",
+		"Education",
+		"About",
+		"Contact"
 	];
 
 	let transitionDuration = 400;
-	let selected = $derived(page.url.pathname.split('/')[1] || 'home');
+	let selected = $derived(page.url.pathname.split("/")[1] || "home");
 </script>
 
 <svelte:head>
@@ -28,7 +43,7 @@
 		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+IT+Moderna:wght@100..400&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 		rel="stylesheet"
 	/>
-	<title>{data.url == '/' ? '' : data.url.split('/')[1] + ' |'} toheeb eji</title>
+	<title>{data.url == "/" ? "" : data.url.split("/")[1] + " |"} toheeb eji</title>
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 </svelte:head>
 
@@ -55,8 +70,8 @@
 						>{selected}</span
 					>
 					<div
-						in:slide={{ axis: 'y', delay: transitionDuration, duration: transitionDuration }}
-						out:slide={{ axis: 'y', duration: transitionDuration }}
+						in:slide={{ axis: "y", delay: transitionDuration, duration: transitionDuration }}
+						out:slide={{ axis: "y", duration: transitionDuration }}
 					>
 						<!-- Content -->
 						{@render children()}

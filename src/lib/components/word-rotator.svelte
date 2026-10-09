@@ -1,5 +1,5 @@
 <script lang="ts">
-	let words = ['Hello', 'World', 'Svelte', 'GSAP', 'Rocks'];
+	let words = ["Hello", "World", "Svelte", "GSAP", "Rocks"];
 </script>
 
 <div class="spinny-words">

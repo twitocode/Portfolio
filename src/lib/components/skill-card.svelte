@@ -1,13 +1,13 @@
 <script lang="ts">
-	import * as Card from '$lib/components/ui/card/index.js';
-	import type { Skill } from '$lib/types';
-	import Badge from './ui/badge/badge.svelte';
-	import { badgeColorMap } from '$lib/utils';
+	import * as Card from "#lib/components/ui/card/index.js";
+	import type { Skill } from "#lib/types.js";
+	import Badge from "./ui/badge/badge.svelte";
+	import { badgeColorMap } from "#lib/utils.js";
 
 	const { skill } = $props<{ skill: Skill }>();
 </script>
 
-<Card.Root class="w-full gap-2 space-y-0 rounded-lg border-0 h-full">
+<Card.Root class="h-full w-full gap-2 space-y-0 rounded-lg border-0">
 	<Card.Header>
 		<Card.Title>
 			<span class="flex flex-col space-y-1">
@@ -21,7 +21,13 @@
 	<Card.Content class="">
 		<div class="flex w-full flex-wrap gap-2">
 			{#each skill.items as item}
-				<Badge variant="secondary" class={[badgeColorMap[item.colour] || 'bg-gray-500', 'flex items-center gap-1 transition-transform hover:scale-105']}>
+				<Badge
+					variant="secondary"
+					class={[
+						badgeColorMap[item.colour] || "bg-gray-500",
+						"flex items-center gap-1 transition-transform hover:scale-105"
+					]}
+				>
 					{#if item.icon}
 						<item.icon />
 					{/if}

@@ -1,217 +1,217 @@
 <script lang="ts">
-	import ProjectCard from '$lib/components/project-card.svelte';
-	import type { Project } from '$lib/types';
+	import ProjectCard from "#lib/components/project-card.svelte";
+	import type { Project } from "#lib/types.js";
 
-	import IconGithub from '~icons/mdi/github';
-	import IconRobot from '~icons/mdi/robot';
-	import IconWeb from '~icons/mdi/web';
-	import IconCSharp from '~icons/simple-icons/csharp';
-	import IconDevpost from '~icons/simple-icons/devpost';
-	import IconDotNet from '~icons/simple-icons/dotnet';
-	import IconFastAPI from '~icons/simple-icons/fastapi';
-	import IconGO from '~icons/simple-icons/go';
-	import IconNext from '~icons/simple-icons/nextdotjs';
-	import IconNumpy from '~icons/simple-icons/numpy';
-	import IconPostgres from '~icons/simple-icons/postgresql';
-	import IconSQLite from '~icons/simple-icons/sqlite';
-	import IconPython from '~icons/simple-icons/python';
-	import IconPytorch from '~icons/simple-icons/pytorch';
-	import IconReact from '~icons/simple-icons/react';
-	import IconRedis from '~icons/simple-icons/redis';
-	import IconSvelte from '~icons/simple-icons/svelte';
-	import IconTypeScript from '~icons/simple-icons/typescript';
-	import IconUnity from '~icons/simple-icons/unity';
+	import IconGithub from "~icons/mdi/github";
+	import IconRobot from "~icons/mdi/robot";
+	import IconWeb from "~icons/mdi/web";
+	import IconCSharp from "~icons/simple-icons/csharp";
+	import IconDevpost from "~icons/simple-icons/devpost";
+	import IconDotNet from "~icons/simple-icons/dotnet";
+	import IconFastAPI from "~icons/simple-icons/fastapi";
+	import IconGO from "~icons/simple-icons/go";
+	import IconNext from "~icons/simple-icons/nextdotjs";
+	import IconNumpy from "~icons/simple-icons/numpy";
+	import IconPostgres from "~icons/simple-icons/postgresql";
+	import IconSQLite from "~icons/simple-icons/sqlite";
+	import IconPython from "~icons/simple-icons/python";
+	import IconPytorch from "~icons/simple-icons/pytorch";
+	import IconReact from "~icons/simple-icons/react";
+	import IconRedis from "~icons/simple-icons/redis";
+	import IconSvelte from "~icons/simple-icons/svelte";
+	import IconTypeScript from "~icons/simple-icons/typescript";
+	import IconUnity from "~icons/simple-icons/unity";
 
 	const projects = $state<Array<Project>>([
 		{
-			title: 'Sift',
-			summary: 'A simple search engine created from scratch',
-			image: '/projects/sift.webp',
-			status: 'completed',
+			title: "Sift",
+			summary: "A simple search engine created from scratch",
+			image: "/projects/sift.webp",
+			status: "completed",
 			stack: [
-				{ tag: 'Go', colour: 'go', icon: IconGO },
-				{ tag: 'SQLite', colour: 'sky', icon: IconSQLite },
-				{ tag: 'React', colour: 'blue_light', icon: IconReact },
-				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript },
+				{ tag: "Go", colour: "go", icon: IconGO },
+				{ tag: "SQLite", colour: "sky", icon: IconSQLite },
+				{ tag: "React", colour: "blue_light", icon: IconReact },
+				{ tag: "TypeScript", colour: "blue", icon: IconTypeScript }
 			],
 			links: [
 				{
-					url: 'https://github.com/twitocode/sift',
-					alt: 'Source Code',
+					url: "https://github.com/twitocode/sift",
+					alt: "Source Code",
 					icon: IconGithub
 				}
 			]
 		},
 		{
-			title: 'Chronoflow',
-			summary: 'Stock dashboard with live prices, charts, price alerts, and AI-assisted analysis',
-			image: '/projects/chronoflow.webp',
-			status: 'completed',
+			title: "Chronoflow",
+			summary: "Stock dashboard with live prices, charts, price alerts, and AI-assisted analysis",
+			image: "/projects/chronoflow.webp",
+			status: "completed",
 			stack: [
-				{ tag: 'React', colour: 'blue_light', icon: IconReact },
-				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript },
-				{ tag: 'Go', colour: 'go', icon: IconGO },
-				{ tag: 'PostgreSQL', colour: 'sky', icon: IconPostgres },
-				{ tag: 'Redis', colour: 'red', icon: IconRedis }
+				{ tag: "React", colour: "blue_light", icon: IconReact },
+				{ tag: "TypeScript", colour: "blue", icon: IconTypeScript },
+				{ tag: "Go", colour: "go", icon: IconGO },
+				{ tag: "PostgreSQL", colour: "sky", icon: IconPostgres },
+				{ tag: "Redis", colour: "red", icon: IconRedis }
 			],
 			links: [
 				{
-					url: 'https://github.com/twitocode/chronoflow',
-					alt: 'Source Code',
+					url: "https://github.com/twitocode/chronoflow",
+					alt: "Source Code",
 					icon: IconGithub
 				},
 				{
-					url: 'https://chronoflow-self.vercel.app',
-					alt: 'Website',
+					url: "https://chronoflow-self.vercel.app",
+					alt: "Website",
 					icon: IconWeb
 				}
 			]
 		},
 		{
-			title: 'Serene',
-			summary: 'A mental health platform for university and college students.',
-			image: '/projects/serene.webp',
-			status: 'in-progress',
+			title: "Serene",
+			summary: "A mental health platform for university and college students.",
+			image: "/projects/serene.webp",
+			status: "in-progress",
 			stack: [
-				{ tag: '.NET', colour: 'purple', icon: IconDotNet },
-				{ tag: 'PostgreSQL', colour: 'sky', icon: IconPostgres },
-				{ tag: 'React', colour: 'blue_light', icon: IconReact },
-				{ tag: 'Next', colour: 'black', icon: IconNext },
-				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript }
+				{ tag: ".NET", colour: "purple", icon: IconDotNet },
+				{ tag: "PostgreSQL", colour: "sky", icon: IconPostgres },
+				{ tag: "React", colour: "blue_light", icon: IconReact },
+				{ tag: "Next", colour: "black", icon: IconNext },
+				{ tag: "TypeScript", colour: "blue", icon: IconTypeScript }
 			],
 			links: [
 				{
-					url: 'https://serene-opal.vercel.app',
-					alt: 'Link',
+					url: "https://serene-opal.vercel.app",
+					alt: "Link",
 					icon: IconWeb
 				},
 				{
-					url: 'https://github.com/twitocode/serene',
-					alt: 'Source Code',
+					url: "https://github.com/twitocode/serene",
+					alt: "Source Code",
 					icon: IconGithub
 				}
 			]
 		},
 		{
-			title: 'Toretto',
+			title: "Toretto",
 			summary:
-				'An AI powered app that helps family members watch over their elderly relatives. (Machacks 2026)',
-			image: '/projects/toretto.webp',
-			status: 'completed',
+				"An AI powered app that helps family members watch over their elderly relatives. (Machacks 2026)",
+			image: "/projects/toretto.webp",
+			status: "completed",
 			stack: [
-				{ tag: 'React Native', colour: 'blue_light', icon: IconReact },
-				{ tag: 'FastAPI', colour: 'emerald', icon: IconFastAPI },
-				{ tag: 'PyTorch', colour: 'orange', icon: IconPytorch },
-				{ tag: 'NumPY', colour: 'teal', icon: IconNumpy }
+				{ tag: "React Native", colour: "blue_light", icon: IconReact },
+				{ tag: "FastAPI", colour: "emerald", icon: IconFastAPI },
+				{ tag: "PyTorch", colour: "orange", icon: IconPytorch },
+				{ tag: "NumPY", colour: "teal", icon: IconNumpy }
 			],
 			links: [
 				{
-					url: 'https://devpost.com/software/toretto',
-					alt: 'Devpost',
+					url: "https://devpost.com/software/toretto",
+					alt: "Devpost",
 					icon: IconDevpost
 				},
 				{
-					url: 'https://github.com/twitocode/machacks-2026',
-					alt: 'Source Code',
+					url: "https://github.com/twitocode/machacks-2026",
+					alt: "Source Code",
 					icon: IconGithub
 				}
 			]
 		},
 		{
-			title: 'Waypoint',
-			summary: 'AI-Powered Search and Rescue Prediction System. (Deltahacks 2026).',
-			image: '/projects/waypoint.webp',
-			status: 'completed',
+			title: "Waypoint",
+			summary: "AI-Powered Search and Rescue Prediction System. (Deltahacks 2026).",
+			image: "/projects/waypoint.webp",
+			status: "completed",
 			stack: [
-				{ tag: 'Python', colour: 'dark_blue', icon: IconPython },
-				{ tag: 'FastAPI', colour: 'emerald', icon: IconFastAPI },
+				{ tag: "Python", colour: "dark_blue", icon: IconPython },
+				{ tag: "FastAPI", colour: "emerald", icon: IconFastAPI },
 
-				{ tag: 'React', colour: 'blue_light', icon: IconReact },
-				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript }
+				{ tag: "React", colour: "blue_light", icon: IconReact },
+				{ tag: "TypeScript", colour: "blue", icon: IconTypeScript }
 			],
 			links: [
 				{
-					url: 'https://trywaypoint.tech',
-					alt: 'Website',
+					url: "https://trywaypoint.tech",
+					alt: "Website",
 					icon: IconWeb
 				},
 				{
-					url: 'https://devpost.com/software/searchable-ai',
-					alt: 'Devpost',
+					url: "https://devpost.com/software/searchable-ai",
+					alt: "Devpost",
 					icon: IconDevpost
 				},
 				{
-					url: 'https://github.com/twitocode/deltahacks-2026',
-					alt: 'Source Code',
+					url: "https://github.com/twitocode/deltahacks-2026",
+					alt: "Source Code",
 					icon: IconGithub
 				}
 			]
 		},
 
 		{
-			title: 'Studyflow',
+			title: "Studyflow",
 			summary:
-				'Helping high school students transform doom-scrolling on social media into productive study breaks through active recall flash cards. (RythmHacks 2025).',
-			image: '/projects/studyflow.webp',
-			status: 'completed',
+				"Helping high school students transform doom-scrolling on social media into productive study breaks through active recall flash cards. (RythmHacks 2025).",
+			image: "/projects/studyflow.webp",
+			status: "completed",
 			stack: [
-				{ tag: 'React Native', colour: 'blue_light', icon: IconReact },
-				{ tag: 'Groq', colour: 'orange', icon: IconRobot },
-				{ tag: 'FastAPI', colour: 'emerald', icon: IconFastAPI }
+				{ tag: "React Native", colour: "blue_light", icon: IconReact },
+				{ tag: "Groq", colour: "orange", icon: IconRobot },
+				{ tag: "FastAPI", colour: "emerald", icon: IconFastAPI }
 			],
 			links: [
 				{
-					url: 'https://devpost.com/software/stufyflow',
-					alt: 'Devpost',
+					url: "https://devpost.com/software/stufyflow",
+					alt: "Devpost",
 					icon: IconDevpost
 				},
 				{
-					url: 'https://github.com/twitocode/rythmhacks2025',
-					alt: 'Source Code',
+					url: "https://github.com/twitocode/rythmhacks2025",
+					alt: "Source Code",
 					icon: IconGithub
 				}
 			]
 		},
 		{
-			title: 'Protoboard',
-			summary: 'A breadboard simulator made in Unity for school.',
-			image: '/projects/protoboard.webp',
-			status: 'completed',
+			title: "Protoboard",
+			summary: "A breadboard simulator made in Unity for school.",
+			image: "/projects/protoboard.webp",
+			status: "completed",
 			stack: [
-				{ tag: 'C#', colour: 'purple', icon: IconCSharp },
-				{ tag: 'Unity', colour: 'neutral', icon: IconUnity }
+				{ tag: "C#", colour: "purple", icon: IconCSharp },
+				{ tag: "Unity", colour: "neutral", icon: IconUnity }
 			],
 			links: [
 				{
-					url: 'https://play.unity.com/en/games/fd8e41e3-7efb-44d2-b61a-8d489f4d0e78/protoboard',
-					alt: 'Play here',
+					url: "https://play.unity.com/en/games/fd8e41e3-7efb-44d2-b61a-8d489f4d0e78/protoboard",
+					alt: "Play here",
 					icon: IconWeb
 				},
 				{
-					url: 'https://github.com/Twito-School-Projects/Protoboard',
-					alt: 'Source Code',
+					url: "https://github.com/Twito-School-Projects/Protoboard",
+					alt: "Source Code",
 					icon: IconGithub
 				}
 			]
 		},
 		{
-			title: 'CEQuiz',
-			summary: 'A quizzing site containing computer engineering topics.',
-			image: '/projects/cequiz.webp',
-			status: 'completed',
+			title: "CEQuiz",
+			summary: "A quizzing site containing computer engineering topics.",
+			image: "/projects/cequiz.webp",
+			status: "completed",
 			stack: [
-				{ tag: 'SvelteKit', colour: 'orange', icon: IconSvelte },
-				{ tag: 'TypeScript', colour: 'blue', icon: IconTypeScript }
+				{ tag: "SvelteKit", colour: "orange", icon: IconSvelte },
+				{ tag: "TypeScript", colour: "blue", icon: IconTypeScript }
 			],
 			links: [
 				{
-					url: 'https://cequiz.vercel.app/',
-					alt: 'Link',
+					url: "https://cequiz.vercel.app/",
+					alt: "Link",
 					icon: IconWeb
 				},
 				{
-					url: 'https://github.com/twitocode/CE-Quiz-Site',
-					alt: 'Source Code',
+					url: "https://github.com/twitocode/CE-Quiz-Site",
+					alt: "Source Code",
 					icon: IconGithub
 				}
 			]

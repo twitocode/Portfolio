@@ -1,5 +1,5 @@
 <script lang="ts">
-	import saturn from '$lib/assets/saturn.gif';
+	import saturn from "#lib/assets/saturn.gif";
 </script>
 
 <svelte:head>
@@ -21,7 +21,10 @@
 			>.
 		</p>
 		<div class="text-primary">
-			Check out my <a href="/toheeb_eji_resume.pdf" class=" underline underline-offset-8 hover:opacity-50">Resume</a>
+			Check out my <a
+				href="/toheeb_eji_resume.pdf"
+				class=" underline underline-offset-8 hover:opacity-50">Resume</a
+			>
 		</div>
 	</div>
 </section>

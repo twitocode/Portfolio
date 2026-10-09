@@ -1,7 +1,7 @@
 <script lang="ts">
-	import * as Card from '$lib/components/ui/card/index.js';
-	import type { Hackathon, Point } from '$lib/types';
-	import { Link } from '@lucide/svelte';
+	import * as Card from "#lib/components/ui/card/index.js";
+	import type { Hackathon, Point } from "#lib/types.js";
+	import { Link } from "@lucide/svelte";
 	const { hackathon } = $props<{ hackathon: Hackathon }>();
 </script>
 
@@ -21,7 +21,7 @@
 <Card.Root class="w-full gap-2 space-y-0 rounded-lg border-0">
 	<Card.Header>
 		<Card.Title
-			class={['flex flex-col justify-center', hackathon.name ? 'space-y-4' : 'space-y-1']}
+			class={["flex flex-col justify-center", hackathon.name ? "space-y-4" : "space-y-1"]}
 		>
 			<span class="flex flex-col space-y-1">
 				<span class="font-space-mono flex items-center space-x-3">
@@ -31,7 +31,7 @@
 						href={hackathon.devpostLink}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="transition ease-in-out hover:text-primary/80"><Link /></a
+						class="hover:text-primary/80 transition ease-in-out"><Link /></a
 					>
 				</span>
 			</span>
