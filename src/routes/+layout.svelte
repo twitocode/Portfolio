@@ -21,6 +21,7 @@
 			pageview({ route: page.route.id, path: page.url.pathname });
 		}
 	});
+
 	let pages = [
 		"Home",
 		"Projects",
@@ -55,7 +56,7 @@
 			>
 				<div class="bg-secondary text-primary w-full rounded-t-3xl px-4 py-8 md:w-10/12">
 					<h1 class="flex items-center justify-between">
-						<span class="font-playwrite-it-moderna text-5xl font-medium md:text-5xl lg:text-6xl"
+						<span class="font-playwrite-it-moderna text-3xl font-medium md:text-5xl lg:text-6xl"
 							>toheeb eji ⋆˚✿˖°</span
 						>
 						<MobileSidebar {pages} {selected} />
