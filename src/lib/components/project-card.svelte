@@ -11,22 +11,10 @@
 
 <Card.Root class="rounded-lg border-0">
 	<Card.Header>
-		<Card.Title class="font-space-mono flex items-center justify-between text-xl">
+		<Card.Title class="font-space-mono flex items-center justify-between text-xl ">
 			<span>{project.title}</span>
-			{#if project.status == "completed"}
-				<Badge variant="secondary" class="bg-green-500 text-white dark:bg-green-600 ">
-					<IconCheckDecagram />
-					Completed
-				</Badge>
-			{:else}
-				<Badge variant="secondary" class="bg-orange-500 text-white dark:bg-orange-600">
-					<IconClockOutline />
-					in-progress
-				</Badge>
-			{/if}
-		</Card.Title>
-		<Card.Description>{project.summary}</Card.Description>
-		{#each project.links as link}
+     <div class="flex pointer-coarse:gap-4 gap-2">
+       {#each project.links as link}
 			<a
 				class="text-accent hover:text-accent flex items-center space-x-1 hover:underline"
 				href={link.url}
@@ -34,9 +22,13 @@
 				rel="noopener noreferrer"
 			>
 				<link.icon />
-				<span>{link.alt}</span>
+
 			</a>
 		{/each}
+     </div>
+		</Card.Title>
+		<Card.Description>{project.summary}</Card.Description>
+		
 	</Card.Header>
 	<Card.Content>
 		<img src={project.image} alt="{project.image}'s Image" class="aspect-video object-cover" />
